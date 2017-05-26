@@ -10,7 +10,7 @@ class Administrador: public Personal{
         int cant_empleados_cotratados;
         int cant_empleados_despedidos;
     public:
-        Administrador(int,int);
+        Administrador(int,int,string,int,string,string,string,int,string,int);
         Administrador();
         int getCant_empleados_cotratados();
         void setCant_empleados_cotratados(int);

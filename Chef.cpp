@@ -1,7 +1,7 @@
 #include "Chef.h"
 
-Chef::Chef(string platillo_favorito,int rating_chef,año_contratacion,sueldo,
-	username,password, nombre, edad, id,telefono){
+Chef::Chef(string platillo_favorito,int rating_chef,int año_contratacion,int sueldo,
+	string username,string password,string nombre,int edad,string id,int telefono){
     this->platillo_favorito=platillo_favorito;
     this->rating_chef=rating_chef;
 }

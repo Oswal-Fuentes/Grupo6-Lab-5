@@ -10,7 +10,7 @@ class Personal: public Usuario{
         int año_contratacion;
         int sueldo;
     public:
-        Personal(int,int);
+        Personal(int,int,string,string,string,int,string,string);
         Personal();
         int getAño_contratacion();
         void setAño_contratacion(int);

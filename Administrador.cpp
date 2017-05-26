@@ -1,7 +1,7 @@
 #include "Administrador.h"
 
 Administrador::Administrador(int cant_empleados_cotratados,int cant_empleados_despedidos,
-	año_contratacion, sueldo,,username,password, nombre, edad, id,telefono){
+	int año_contratacion,int sueldo,string username,string password,string nombre,int edad,string id,int telefono){
     this->cant_empleados_cotratados=cant_empleados_cotratados;
     this->cant_empleados_despedidos=cant_empleados_despedidos;
 }
