@@ -1,8 +1,16 @@
 #include "Personal.h"
+<<<<<<< HEAD
 
 Personal::Personal(int año_contratacion,int sueldo){
     this->año_contratacion=año_contratacion;
     this->sueldo=sueldo;
+=======
+#include <string>
+Personal::Personal(int año_contratacion,int sueldo):
+Usuario(año_contratacion, sueldo,username,password, nombre, edad, id,telefono){
+   	this->año_contratacion=año_contratacion;
+   	this->sueldo=sueldo;
+>>>>>>> 7d0a85b135f37e1d06f9b3c13ade02e748729639
 }
 Personal::Personal(){
 
