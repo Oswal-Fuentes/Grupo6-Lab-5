@@ -1,6 +1,7 @@
 #include "Meseros.h"
+#include "Personal.h"
 
-Meseros::Meseros(string lista_platillos,int año_contratacion,int sueldo,string username,
+Meseros::Meseros(string lista_platillos,int ano_contratacion,int sueldo,string username,
 	string password,string nombre,int edad,string id,string telefono){
     this->lista_platillos=lista_platillos;
 }

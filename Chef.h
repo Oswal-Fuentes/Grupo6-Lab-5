@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "Personal.h"
 
 using namespace std;
 
@@ -10,7 +11,7 @@ class Chef: public Personal{
         string platillo_favorito;
         int rating_chef;
     public:
-        Chef(string,int,string,int,string,string,string,int,string,int);
+        Chef(string,int,int,int,string,string,string,int,string,string);
         Chef();
         string getPlatillo_favorito();
         void setPlatillo_favorito(string);

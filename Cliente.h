@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "Usuario.h"
 
 using namespace std;
 
@@ -10,7 +11,7 @@ class Cliente: public Usuario {
         string direccion;
         int rating;
     public:
-        Cliente(string,int);
+        Cliente(string,int,string,string,string,int,string,string);
         Cliente();
         string getDireccion();
         void setDireccion(string);

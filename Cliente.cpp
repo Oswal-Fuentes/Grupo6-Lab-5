@@ -1,11 +1,9 @@
 #include "Cliente.h"
 #include <string>
-<<<<<<< HEAD
-Cliente::Cliente(string direccion,int rating):Usuario (username,password,nombre,edad,id,telefono){
-=======
-Cliente::Cliente(string direccion,int rating,username,password,nombre,edad,id,telefono){
+#include "Usuario.h"
 
->>>>>>> 1ed07187102501cb54bc349a7c2113807a222390
+Cliente::Cliente(string direccion,int rating,string username,string password,string nombre,
+	int edad,string id,string telefono){
     this->direccion=direccion;
     this->rating=rating;
 }
