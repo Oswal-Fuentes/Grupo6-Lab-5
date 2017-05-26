@@ -1,7 +1,6 @@
 #include "Usuario.h"
 
-Usuario::Usuario(string username,string password,string nombre,int edad,string id,string telefono)
-:Usuario(año_contratacion, sueldo,username,password, nombre, edad, id,telefono){
+Usuario::Usuario(string username,string password,string nombre,int edad,string id,string telefono){
     this->username=username;
     this->password=password;
     this->nombre=nombre;

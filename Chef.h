@@ -5,7 +5,7 @@ using namespace std;
 
 #ifndef CHEF_H
 #define CHEF_H
-class Chef: public Administrador{
+class Chef: public Personal{
     protected:
         string platillo_favorito;
         int rating_chef;
