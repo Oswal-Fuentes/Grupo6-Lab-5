@@ -379,4 +379,169 @@ vector<Usuario> agregarChef(vector<Usuario>usuarios){
 	escritura.close();
 	return admin;
 }
+
+int menuchef() {
+	int opcion;
+	bool valido = false;
+	do {
+		cout << "-----MENU CHEF-----" << endl
+		<< "1.- Gritar a Lavaplatos " << endl
+		<< "2.- Agradar Lavaplatos" << endl
+		<< "3.- Salir" << endl;
+		cout << "Ingrese una opcion: ";
+		cin>>opcion;
+		if (opcion > 0 && opcion <= 3)
+			valido = true;
+		else {
+			cout << "Opcion no valida, intente de nuevo..." << endl;
+		}
+
+	} while (!valido);
+	return opcion;
+}
+
+
+
+int menumeseros() {
+	int opcion;
+	bool valido = false;
+	do {
+		cout << "-----MENU MESEROS-----" << endl
+		<< "1.- Listar Platillos" << endl
+		<< "2.- Salir" << endl;
+		cout << "Ingrese una opcion: ";
+		cin>>opcion;
+		if (opcion > 0 && opcion <= 2)
+			valido = true;
+		else {
+			cout << "Opcion no valida, intente de nuevo..." << endl;
+		}
+
+	} while (!valido);
+	return opcion;
+}
+
+vector<Usuario> gritar(vector<usuario> u, int decremento){
+	int estado=0;
+	for (int i = 0; i < u.size(); ++i)
+	{
+		int pos;
+		cout<<"Ingrese pos del lavaplatos"<<end;
+		cin>>pos;
+		(Chef) u.at(pos).getMotivacion();
+		cout<<"ingrese el decremento"<<endl;
+		cin>>decremento;
+		estado=motivacion-decremento;
+
+	}
+	return estado;
+
+}
+
+vector<Usuario> agradar(vector<Usuario> u, int aumentar){
+	int estado=0;
+	for (int i = 0; i < u.size(), i++){
+		int pos;
+		cout<<"ingrese la pos a eliminar"<<endl;
+		cin>>pos;
+		(Chef) u.at(pos).getMotivacion();
+		cout<<"Ingrese el incremento"<<endl;
+		cin>>aumentar;
+		estado=motivacion+aumentar;
+		return estado;
+	}
+}
+
+
+
+int GritarLavaplato(int decremento_motivacion){
+	cout<<"Ingrese el decremento de la motivacion"<<endl;
+	cin>>decremento_motivacion;
+
+	return decremento_motivacion;
+}
+
+int AgradarLavaPlatos(int incrementar_motivacion){
+	cout<<"Ingrese el "
+}
+
+int motivacion=50;
+switch(menuChef){
+	case 1:{
+			int pos;
+			for (int i = 0; i < usuario.size(); ++i)
+			{	
+				cout<<"Ingrese la posicion del lavaplatos"
+				cin<<pos;
+				pos.at(i)->getMotivacion();
+
+			}
+			
+
+
+		break;	
+	}
+
+	case 2:
+	
+ 
+}
+
+vector<Usuario> renunciar(bool r){
+	 r=false;
+	 if(motivacion<=25){
+	 	r=true;
+	 }else{
+	 	r=false;
+	 }
+	 return r;
+}
+
+int renunciar(){
+	bool renuncia=false;
+	if (motivacion <=25)
+	{
+		renuncia=true;
+	}else{
+		renuncia=false;
+	}
+
+	return 0;
+}
+
+
+vector<Usuario> aumento(bool r, int cantidad){
+	r=false;
+
+	if(motivacion>=100){
+		r=true;
+		cout<<"Ingrese la cantidad"<<endl;
+		cin>>cantidad;
+		if (cantidad>sueldo)
+		{
+			cout<<"su peticion de aumento no puede pasar su salario actual"<<endl;
+		}
+
+	}else{
+		r=false;
+		cout<<"no puede solicitar aumento"<<endl;
+	}
+	return cantidad;
+
+}
+
+int  aumento(){
+	bool aumento;
+	int cuanto;
+	if (motivacion>=100)
+	{
+		aumento=true;
+		cout<<"de cuanto quiere el aumento"<<endl;
+		cin>>cuanto;
+	}else{
+		aumento=false;
+	}
+}
+
 */
+
